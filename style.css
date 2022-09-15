@@ -12,10 +12,15 @@ body {
 header {
     text-align: center;
     background-color: rgb(170, 150, 0);
+    color: black;
+    font-weight: bolder;
 }
 .name {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .info {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+em {
+    text-decoration: underline;
 }
