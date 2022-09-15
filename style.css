@@ -5,10 +5,13 @@ body {
     display: flex;
     border: 1px solid;
     flex-direction: column;
+    background-color: rgb(25, 0, 100);
+    color: white;
 }
 
 header {
     text-align: center;
+    background-color: rgb(170, 150, 0);
 }
 .name {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
