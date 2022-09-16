@@ -26,4 +26,20 @@ em {
 }
 #nameAndInfo {
     text-shadow: 2px 2px rgb(119,119,119);
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: fit-content;
+    border: 1px solid white;
+    margin-top: 50px;
+    z-index: 1;
+    background-color: rgba(25, 0, 150, 0.7);
+    border-radius: 5px;
+}
+#sideImage {
+    z-index: -1;
+    width: fit-content;
+    position: relative;
+    align-self: flex-end;
+    border: 1px solid white;
 }
