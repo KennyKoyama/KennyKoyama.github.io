@@ -1,12 +1,15 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    border: 0;
+    padding: 0;
 }
 body {
     display: flex;
     border: 1px solid;
     flex-direction: column;
     background-color: rgb(25, 0, 100);
+    background-image: url("/images/pngwing.png");
     color: white;
 }
 
