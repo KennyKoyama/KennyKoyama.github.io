@@ -144,7 +144,7 @@ a:hover {
 article {
     background-color: rgb(255, 255, 255);
     color: black;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     border-radius: 5px;
     width: 240px;
     height: 320px;
