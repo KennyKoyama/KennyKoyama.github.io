@@ -5,45 +5,51 @@
     margin: 0;
     text-decoration: none;
 }
+html {
+    /* width: 100vw; */
+}
+@media (max-width: 800px) {
+    html {
+        width: 100vh;
+        /* height: auto; */
+        /* min-height: 100vmax; */
+    }
+    body {
+        /* height: auto; */
+        /* min-height: 100vh; */
+    }
+}
 body {
     /* background-color: rgb(25, 0, 100); */
     background: linear-gradient(rgb(58, 58, 255), rgb(0, 4, 79));
     background-repeat: no-repeat;
-    background-size: 100%;
+    /* background-size:100vw; */
     color: white;
-    width: 800px;
+    /* width: 100%; */
     height: auto;
+    /* min-width: 200px; */
+    max-width: 800px;
     /* border: 5px solid yellow; */
     position: relative;
     padding-bottom: 50px;
+    margin: auto;
 }
 
-header {
-    height: fit-content;
-    padding: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: rgb(170, 150, 0);
-    color: black;
-    font-weight: bolder;
-    border: 5px solid yellow;
-
-}
 main {
+    
     margin-top: 20px;
-    height: 865px;
-    width: auto;
+    height: 100vh;
     background-image: url("/images/pngwing.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* border: 5px solid green; */
-
+    /* border: 5px solid red; */
 }
 #trybelogo {
     position: relative;
     top: 175px;
     left: 525px;
     width: fit-content;
+    /* border: 1px solid yellow; */
 }
 #trybelogo img{
     width: 100px;
