@@ -1,12 +1,181 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 body {
-    display: flex;
-    border: 1px solid;
-    flex-direction: column;
+    /* background-color: rgb(25, 0, 100); */
+    background: linear-gradient(rgb(58, 58, 255), rgb(0, 4, 79));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    width: 800px;
+    height: auto;
+    /* border: 5px solid yellow; */
+    position: relative;
+    padding-bottom: 50px;
 }
 
 header {
+    height: fit-content;
+    padding: 10px 0;
     text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(170, 150, 0);
+    color: black;
+    font-weight: bolder;
+    border: 5px solid yellow;
+
+}
+main {
+    margin-top: 20px;
+    height: 865px;
+    width: auto;
+    background-image: url("/images/pngwing.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 5px solid green; */
+
+}
+#trybelogo {
+    position: relative;
+    top: 175px;
+    left: 525px;
+    width: fit-content;
+}
+#trybelogo img{
+    width: 100px;
+    transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+}
+.name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: inherit;
+}
+.info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header em {
+    text-decoration: underline;
+    
+}
+#name, #info {
+    text-shadow: 1px -1px rgb(140,140,140);
+    color: black;
+    transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+}
+#name {
+    width: 100px;
+    position: relative;
+    top: 170px;
+    left: 449px;
+    line-height: 25px;
+}
+#info {
+    width: 130px;
+    line-height: 25px;
+    position: relative;
+    top: 180px;
+    left: 310px;
+}
+
+figure{
+    background-image: url('/images/selfie.png');
+    background-size: cover;
+    width: 59px;
+    height: 59px;
+    position: relative;
+    left: 413px;
+    top: 5px;
+    border-radius: 5px;
+    transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+    box-shadow: 1px -1px 0 grey;
+    
+}
+
+
+#learning {
+    /* background-color: yellow; */
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 10px 10px 10px 15px;
+    width: fit-content;
+    top: 88px;
+    left: 480px;
+    border-radius: 5px;
+    box-shadow: 1px -1px grey;
+    transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+    /* border: 5px solid yellow; */
+
+}
+#learning h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px -1px lightgray;
+}
+#learning ul {
+    text-align: center;
+    list-style: none;
+}
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+a:hover {
+    font-weight: bold;
+    text-shadow: 2px -2px 0 lightblue;
+}
+
+#articles {
+    position: relative;
+    top: 30px;
+    display: flex;
+    padding: 20px 20px;
+    flex-flow: row;
+    overflow: auto;
+    white-space: nowrap;
+    gap: 20px;
+    /* border: 5px solid yellow; */
+}
+
+article {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    /* border: 2px solid green; */
+    border-radius: 5px;
+    width: 240px;
+    height: 320px;
+    padding: 10px 10px;
+    white-space: initial;
+    flex: none;
+    box-shadow: 6px 6px 1px rgb(155, 169, 255);
+}
+article img {
+    /* background-color: aqua; */
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 80px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    /* border-radius: 50%; */
+    /* border: 5px solid yellow; */
+
+}
+
+#community {
+    width: fit-content;
+    position: absolute;
+    top: 325px;
+    left: 575px;
+    transform: skew(0deg, 30deg);
+    /* border: 5px solid yellow; */
+}
+
+#community img {
+    width: 40px;
+    height: 46px;
 }

@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <h1>Portfolio <em>under construction</em></h1>
-    </header>
-    <section>
-    <h2>Kenny Koyama</h2>
-    <p>Dev Student @ <strong>Trybe</strong></p>
-    <p>Brazil - São Paulo</p>
+    <!-- <header>
+    <h1>Portfolio <br><em>under construction</em></h1>
+    </header> -->
+    <main>
+    <section id="trybelogo">
+        <img src="/images/trybeWhite.webp" alt="logo trybe">
     </section>
-    <section>
-        <img src="/images/pngwing.png" alt="Under Construction" width="500px">
+    <section id="name">
+    <h2 class="name">Kenny Koyama</h2>
     </section>
-    <aside>
+    <section id="info">
+        <p class="info">Dev Student @ <strong>Trybe</strong></p>
+        <p class="info">Brazil - São Paulo</p>
+    </section>
+    <figure id="selfie">
+        <div class="selfie"></div>
+        <div class="backdrop"></div>
+        <!-- <img src="/images/selfie.png" alt="selfie"> -->
+    </figure>
+    <section id="learning">
         <h2>Learning:</h2>
     <ul>
         <li><a href="#unix">Unix</a></li>
@@ -29,7 +40,9 @@
         <li><a href="#css">CSS</a></li>
         <li><a href="#javascript">JavaScript</a></li>
     </ul>
-    </aside>
+    </section>
+    </main>
+
     <section id="articles">
         <article id="unix">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" alt="Unix Logo" width="40px"/>
@@ -37,31 +50,31 @@
         </article>
         <article id="bash">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash Logo" width="40px"/>
-            <p>Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell. First released in 1989, it has been used as the default login shell for most Linux distributions.Bash was one of the first programs Linus Torvalds ported to Linux, alongside GCC.</p>
+            <p>Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell. First released in 1989, it has been used as the default login shell for most Linux distributions.</p>
         </article>
         <article id="git">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo" width="40px"/>
-            <p>Git is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).</p>
+            <p>Git is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</p>
         </article>
         <article id="github">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo" width="40px"/>
-            <p>GitHub is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. Headquartered in California, it has been a subsidiary of Microsoft since 2018</p>
+            <p>GitHub is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.</p>
         </article>
         <article id="html">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5 Logo" width="40px"/>
-            <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as CSS and scripting languages such as JavaScript.</p>
         </article>
         <article id="css">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS Logo" width="40px"/>
-            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).</p>
         </article>
         <article id="javascript">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS Logo" width="40px"/>
-            <p>JavaScript often abbreviated to JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior,often incorporating third-party libraries.</p>
+            <p>JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior,often incorporating third-party libraries.</p>
         </article>
     </section>
     <section id="community">
-        <h2>Community:</h2>
+        <!-- <h2>Community:</h2> -->
         <a href="https://dev.to" target="_blank"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="Dev.to link" width="60px" ></a>
     </section>
 </body>
