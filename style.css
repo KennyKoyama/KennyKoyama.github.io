@@ -9,6 +9,8 @@ body {
     border: 2px solid yellow;
     background-color: rgb(25, 0, 100);
     color: white;
+    width: 800px;
+    /* background-position-x: center; */
 }
 
 header {
@@ -23,10 +25,24 @@ header {
 main {
     margin-top: 20px;
     height: 695px;
+    width: auto;
     background-image: url("/images/pngwing.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#trybelogo {
+    position: relative;
+    top: 175px;
+    left: 525px;
+
+}
+#trybelogo img{
+    width: 100px;
+    transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
 }
 .name {
     font-family: 'Press Start 2P', cursive;
+    font-size: inherit;
 }
 .info {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -35,58 +51,50 @@ header em {
     text-decoration: underline;
     
 }
-#nameAndInfo {
-    text-shadow: 2px 2px rgb(119,119,119);
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    width: fit-content;
-    border: 1px solid white;
-    margin-top: 50px;
-    z-index: 1;
-    background-color: rgba(25, 0, 150, 0.7);
-    border-radius: 5px;
+#name, #info {
+    text-shadow: 1px -1px rgb(140,140,140);
+    color: black;
+    transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
 }
-img {
+#name {
     width: 100px;
-    border-radius: 50%;
-    /* backdrop-filter: grayscale(1.0); */
+    position: relative;
+    top: 170px;
+    left: 449px;
+    line-height: 25px;
 }
+#info {
+    width: 130px;
+    line-height: 25px;
+    position: relative;
+    top: 180px;
+    left: 310px;
+}
+
 figure{
     background-image: url('/images/selfie.png');
     background-size: cover;
-    width: 100px;
-    height: 130px;
-    position: absolute;
-    left: 60%;
-    top: 55%;
+    width: 59px;
+    height: 59px;
+    position: relative;
+    left: 413px;
+    top: 5px;
     border-radius: 5px;
-    border: 5px solid white;
-    transform: rotateY(-45deg) rotateX(-20deg) rotateZ(20deg);
-    box-shadow: 8px -7px 0 grey;
-    
+    transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+    box-shadow: 1px -1px 0 grey;
 }
 .selfie {
-    /* background-image: url('/images/selfie.png'); */
-    width: 100px;
-    
+    width: 100px;    
 }
-/* #selfie {
-    width: fit-content;
-    position: relative;
-    border: 5px solid white;
-    position: absolute;
-    
-} */
+
 #learning {
     /* background-color: yellow; */
-    position: absolute;
-    top: 650px;
-    left: 30px;
+    position: relative;
+    top: 40px;
+    left: 95px;
     border-radius: 5px;
     
 }
-
 a {
     color: white;
 }
@@ -94,6 +102,7 @@ a:hover {
     font-weight: bold;
 }
 
-.backdrop {
-    backdrop-filter: grayscale(1);
+#articles {
+    position: relative;
+    top: 150px;
 }
