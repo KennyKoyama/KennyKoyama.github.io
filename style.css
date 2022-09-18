@@ -6,11 +6,9 @@
     text-decoration: none;
 }
 body {
-    border: 2px solid yellow;
     background-color: rgb(25, 0, 100);
     color: white;
     width: 800px;
-    /* background-position-x: center; */
 }
 
 header {
@@ -24,7 +22,7 @@ header {
 }
 main {
     margin-top: 20px;
-    height: 695px;
+    height: 865px;
     width: auto;
     background-image: url("/images/pngwing.png");
     background-size: cover;
@@ -90,19 +88,63 @@ figure{
 #learning {
     /* background-color: yellow; */
     position: relative;
-    top: 40px;
-    left: 95px;
+    background-color: white;
+    color: black;
+    padding: 10px 10px 10px 15px;
+    width: fit-content;
+    top: 88px;
+    left: 480px;
     border-radius: 5px;
-    
+    box-shadow: 1px -1px grey;
+    transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+}
+#learning h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px -1px lightgray;
+}
+#learning ul {
+    text-align: center;
+    list-style: none;
 }
 a {
-    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
 }
 a:hover {
     font-weight: bold;
+    text-shadow: 2px -2px 0 lightblue;
 }
 
 #articles {
     position: relative;
-    top: 150px;
+    top: 30px;
+    display: flex;
+    padding: 0 50px;
+    flex-flow: row;
+    overflow: auto;
+    white-space: nowrap;
+    gap: 20px;
+}
+
+article {
+    background-color: aliceblue;
+    color: black;
+    border: 2px solid green;
+    border-radius: 5px;
+    width: 240px;
+    height: 320px;
+    padding: 10px 10px;
+    white-space: initial;
+    flex: none;
+}
+article img {
+    /* background-color: aqua; */
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 80px;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
