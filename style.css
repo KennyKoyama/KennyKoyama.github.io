@@ -1,23 +1,29 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    border: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 body {
-    display: flex;
-    border: 1px solid;
-    flex-direction: column;
+    border: 2px solid yellow;
     background-color: rgb(25, 0, 100);
-    background-image: url("/images/pngwing.png");
     color: white;
 }
 
 header {
+    height: fit-content;
+    padding: 10px 0;
     text-align: center;
+    text-transform: uppercase;
     background-color: rgb(170, 150, 0);
     color: black;
     font-weight: bolder;
+}
+main {
+    margin-top: 20px;
+    height: 695px;
+    background-image: url("/images/pngwing.png");
 }
 .name {
     font-family: 'Press Start 2P', cursive;
@@ -25,13 +31,14 @@ header {
 .info {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-em {
+header em {
     text-decoration: underline;
+    
 }
 #nameAndInfo {
     text-shadow: 2px 2px rgb(119,119,119);
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 5%;
     width: fit-content;
     border: 1px solid white;
@@ -40,10 +47,53 @@ em {
     background-color: rgba(25, 0, 150, 0.7);
     border-radius: 5px;
 }
-#sideImage {
-    z-index: -1;
+img {
+    width: 100px;
+    border-radius: 50%;
+    /* backdrop-filter: grayscale(1.0); */
+}
+figure{
+    background-image: url('/images/selfie.png');
+    background-size: cover;
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    border-radius: 5px;
+    border: 5px solid white;
+    transform: rotateY(-45deg) rotateX(-20deg) rotateZ(20deg);
+    box-shadow: 8px -7px 0 grey;
+    
+}
+.selfie {
+    /* background-image: url('/images/selfie.png'); */
+    width: 100px;
+    
+}
+/* #selfie {
     width: fit-content;
     position: relative;
-    align-self: flex-end;
-    border: 1px solid white;
+    border: 5px solid white;
+    position: absolute;
+    
+} */
+#learning {
+    /* background-color: yellow; */
+    position: absolute;
+    top: 650px;
+    left: 30px;
+    border-radius: 5px;
+    
+}
+
+a {
+    color: white;
+}
+a:hover {
+    font-weight: bold;
+}
+
+.backdrop {
+    backdrop-filter: grayscale(1);
 }
