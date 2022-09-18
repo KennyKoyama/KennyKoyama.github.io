@@ -6,9 +6,16 @@
     text-decoration: none;
 }
 body {
-    background-color: rgb(25, 0, 100);
+    /* background-color: rgb(25, 0, 100); */
+    background: linear-gradient(rgb(58, 58, 255), rgb(0, 4, 79));
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: white;
     width: 800px;
+    height: auto;
+    /* border: 5px solid yellow; */
+    position: relative;
+    padding-bottom: 50px;
 }
 
 header {
@@ -19,6 +26,8 @@ header {
     background-color: rgb(170, 150, 0);
     color: black;
     font-weight: bolder;
+    border: 5px solid yellow;
+
 }
 main {
     margin-top: 20px;
@@ -27,12 +36,14 @@ main {
     background-image: url("/images/pngwing.png");
     background-size: cover;
     background-repeat: no-repeat;
+    /* border: 5px solid green; */
+
 }
 #trybelogo {
     position: relative;
     top: 175px;
     left: 525px;
-
+    width: fit-content;
 }
 #trybelogo img{
     width: 100px;
@@ -80,10 +91,9 @@ figure{
     border-radius: 5px;
     transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
     box-shadow: 1px -1px 0 grey;
+    
 }
-.selfie {
-    width: 100px;    
-}
+
 
 #learning {
     /* background-color: yellow; */
@@ -97,6 +107,8 @@ figure{
     border-radius: 5px;
     box-shadow: 1px -1px grey;
     transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+    /* border: 5px solid yellow; */
+
 }
 #learning h2 {
     font-family: 'Press Start 2P', cursive;
@@ -121,15 +133,16 @@ a:hover {
     position: relative;
     top: 30px;
     display: flex;
-    padding: 0 50px;
+    padding: 20px 20px;
     flex-flow: row;
     overflow: auto;
     white-space: nowrap;
     gap: 20px;
+    /* border: 5px solid yellow; */
 }
 
 article {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     color: black;
     border: 2px solid green;
     border-radius: 5px;
@@ -138,6 +151,7 @@ article {
     padding: 10px 10px;
     white-space: initial;
     flex: none;
+    box-shadow: 6px 6px 1px rgb(155, 169, 255);
 }
 article img {
     /* background-color: aqua; */
@@ -147,4 +161,21 @@ article img {
     width: 80px;
     padding-bottom: 10px;
     padding-top: 20px;
+    /* border-radius: 50%; */
+    /* border: 5px solid yellow; */
+
+}
+
+#community {
+    width: fit-content;
+    position: absolute;
+    top: 325px;
+    left: 575px;
+    transform: skew(0deg, 30deg);
+    /* border: 5px solid yellow; */
+}
+
+#community img {
+    width: 40px;
+    height: 46px;
 }
