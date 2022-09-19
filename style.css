@@ -142,6 +142,7 @@ a:hover {
     overflow: auto;
     white-space: nowrap;
     gap: 20px;
+    margin-right: 1rem;
     /* border: 5px solid yellow; */
 }
 
@@ -160,6 +161,9 @@ a:hover {
 }
 .card:first-child {
     box-shadow: 0 0;
+}
+.card:not(:first-child) {
+    margin-left: -173px;
 }
 .card img {
     /* background-color: aqua; */
