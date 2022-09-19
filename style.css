@@ -142,8 +142,10 @@ a:hover {
     overflow: auto;
     white-space: nowrap;
     gap: 20px;
-    margin-right: 1rem;
     /* border: 5px solid yellow; */
+    margin-top: 1rem;
+    padding-top: 2rem;
+    /* box-shadow: inset -1rem 0 1rem black; */
 }
 
 .card {
@@ -156,8 +158,9 @@ a:hover {
     padding: 10px 10px;
     white-space: initial;
     flex: none;
-    box-shadow: -1.5rem 0 1rem black;
+    box-shadow: -1.9rem 0 1.5rem rgb(33, 33, 33);
     position: relative;
+    transition: 0.3s ease;
 }
 .card:first-child {
     box-shadow: 0 0;
@@ -180,7 +183,7 @@ a:hover {
 }
 
 .card:hover {
-    transform:translateY(-0.5rem);
+    transform:translateY(-0.8rem);
 }
 .card:hover~.card{
     transform: translateX(175px);
