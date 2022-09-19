@@ -52,6 +52,7 @@ main {
 #trybelogo img{
     width: 100px;
     transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+    filter: drop-shadow(0.08rem 0 black);
 }
 .name {
     font-family: 'Press Start 2P', cursive;
@@ -132,7 +133,7 @@ a:hover {
     text-shadow: 2px -2px 0 lightblue;
 }
 
-#articles {
+.card-list {
     position: relative;
     top: 30px;
     display: flex;
@@ -144,7 +145,7 @@ a:hover {
     /* border: 5px solid yellow; */
 }
 
-article {
+.card {
     background-color: rgb(255, 255, 255);
     color: black;
     /* border: 2px solid green; */
@@ -154,9 +155,13 @@ article {
     padding: 10px 10px;
     white-space: initial;
     flex: none;
-    box-shadow: 6px 6px 1px rgb(155, 169, 255);
+    box-shadow: -1.5rem 0 1rem black;
+    position: relative;
 }
-article img {
+.card:first-child {
+    box-shadow: 0 0;
+}
+.card img {
     /* background-color: aqua; */
     display: block;
     margin: auto;
@@ -164,6 +169,7 @@ article img {
     width: 80px;
     padding-bottom: 10px;
     padding-top: 20px;
+    filter: drop-shadow(0.1rem 0 0.1rem);
     /* border-radius: 50%; */
     /* border: 5px solid yellow; */
 
