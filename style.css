@@ -179,6 +179,14 @@ a:hover {
 
 }
 
+.card:hover {
+    transform:translateY(-0.5rem);
+}
+.card:hover~.card{
+    transform: translateX(175px);
+}
+
+
 #community {
     width: fit-content;
     position: absolute;
