@@ -85,8 +85,9 @@ header em {
 }
 
 figure{
-    background-image: url('/images/selfie.png');
-    background-size: cover;
+    /* background-image: url('/images/selfie.png'); */
+    background-image: url('./images/selfie2.png');
+    background-size: 90%;
     width: 59px;
     height: 59px;
     position: relative;
@@ -95,9 +96,7 @@ figure{
     border-radius: 5px;
     transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
     box-shadow: 1px -1px 0 grey;
-    
 }
-
 
 #learning {
     /* background-color: yellow; */
