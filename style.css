@@ -5,17 +5,15 @@
     margin: 0;
     text-decoration: none;
 }
-html {
-    /* width: 100vw; */
-}
-@media (max-width: 800px) {
+
+@media only screen and (max-width: 800px) {
     html {
-        width: 100vh;
-        /* height: auto; */
-        /* min-height: 100vmax; */
+        width: 100vmax;
+        /* height: 100vmax; */
+        /* min-height: 100vh; */
     }
     body {
-        /* height: auto; */
+        height: 1500px;
         /* min-height: 100vh; */
     }
 }
@@ -28,7 +26,7 @@ body {
     /* width: 100%; */
     height: auto;
     /* min-width: 200px; */
-    max-width: 800px;
+    width: 800px;
     /* border: 5px solid yellow; */
     position: relative;
     padding-bottom: 50px;
