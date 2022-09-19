@@ -41,6 +41,8 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     /* border: 5px solid red; */
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 #trybelogo {
     position: relative;
@@ -142,7 +144,7 @@ a:hover {
     overflow: auto;
     white-space: nowrap;
     gap: 20px;
-    /* border: 5px solid yellow; */
+    border-top: 1px solid rgb(198, 145, 0);
     margin-top: 1rem;
     padding-top: 2rem;
     /* box-shadow: inset -1rem 0 1rem black; */
