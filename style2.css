@@ -42,6 +42,7 @@ main {
     position: relative;
     top: 200px;
     width: 800px;
+    filter: drop-shadow(0.3rem 0.2rem 0.2rem rgba(0, 0, 0, 0.546));
 }
 
 .trybelogo {
@@ -132,7 +133,7 @@ main {
     padding: 1rem;
     white-space: initial;
     flex: none;
-    box-shadow: -1.9rem 0 1.5rem rgb(33, 33, 33);
+    box-shadow: -1.9rem 0 1.5rem rgba(0, 0, 0, 0.5);
     position: relative;
     transition: 0.3s ease;
 }
@@ -149,7 +150,7 @@ main {
     width: 80px;
     padding-bottom: 10px;
     padding-top: 20px;
-    filter: drop-shadow(0.1rem 0 0.1rem);
+    filter: drop-shadow(-0.2rem 0 0.1rem rgba(0, 0, 0, 0.3));
 }
 
 .card:hover {
