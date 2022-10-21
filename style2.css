@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: darkblue;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    box-shadow: 0 0 3rem darkblue;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    position: relative;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.background {
+    position: relative;
+    top: 200px;
+    width: 800px;
+}
+
+.trybelogo {
+    position: relative;
+    top: -470px;
+    right: -180px;
+    transform: skewY(31deg);
+    width: 4em;
+    filter: drop-shadow(0 0 1px);
+}
+
+.selfie {
+    width: 2.5rem;
+    position: relative;
+    top: -505px;
+    right: -44px;
+    transform: skewY(31deg);
+}
+
+.name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    position: relative;
+    top: -497px;
+    right: -100px;
+    transform: skewY(31deg);
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.65rem;
+    position: relative;
+    top: -450px;
+    right: 15px;
+    transform: skewY(31deg);
+}
+
+.learning {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    position: relative;
+    top: -455px;
+    right: -135px;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    background-color: white;
+    transform: skewY(30deg);
+}
+
+.learning ul li {
+    list-style-position: inside;
+}
+
+.dev-link {
+    position: relative;
+    top: -624px;
+    right: -195px;
+    transform: skewY(30deg);
+}
+
+.dev-link img {
+    width: 40px;
+    height: 46px;
+}
+
+.card-list {
+    position: relative;
+    top: 10em;
+    display: flex;
+    flex-flow: row;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 3rem;
+    box-shadow: inset 0 0 1px 20px rgba(0, 0, 0, 0.5),
+                      0 0 1px 40px rgba(0, 0, 0, 0.2),
+                      0 0 1px 20px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    background-color: rgb(0, 0, 0);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 5px;
+    width: 15rem;
+    height: 20rem;
+    padding: 1rem;
+    white-space: initial;
+    flex: none;
+    box-shadow: -1.9rem 0 1.5rem rgb(33, 33, 33);
+    position: relative;
+    transition: 0.3s ease;
+}
+.card:first-child {
+    box-shadow: 0 0;
+}
+.card:not(:first-child) {
+    margin-left: calc((100% / 7) - 16.5em);
+}
+.card img {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 80px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    filter: drop-shadow(0.1rem 0 0.1rem);
+}
+
+.card:hover {
+    transform:translateY(-1rem);
+}
+.card:hover~.card{
+    transform: translateX(70%);
+}

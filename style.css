@@ -5,49 +5,56 @@
     margin: 0;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 800px) {
+    html {
+        width: 100vmax;
+        /* height: 100vmax; */
+        /* min-height: 100vh; */
+    }
+    body {
+        height: 1500px;
+        /* min-height: 100vh; */
+    }
+}
 body {
     /* background-color: rgb(25, 0, 100); */
     background: linear-gradient(rgb(58, 58, 255), rgb(0, 4, 79));
     background-repeat: no-repeat;
-    background-size: 100%;
+    /* background-size:100vw; */
     color: white;
-    width: 800px;
+    /* width: 100%; */
     height: auto;
+    /* min-width: 200px; */
+    width: 800px;
     /* border: 5px solid yellow; */
     position: relative;
     padding-bottom: 50px;
+    margin: auto;
 }
 
-header {
-    height: fit-content;
-    padding: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: rgb(170, 150, 0);
-    color: black;
-    font-weight: bolder;
-    border: 5px solid yellow;
-
-}
 main {
+    
     margin-top: 20px;
-    height: 865px;
-    width: auto;
+    height: 100vh;
     background-image: url("/images/pngwing.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* border: 5px solid green; */
-
+    /* border: 5px solid red; */
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 #trybelogo {
     position: relative;
     top: 175px;
     left: 525px;
     width: fit-content;
+    /* border: 1px solid yellow; */
 }
 #trybelogo img{
     width: 100px;
     transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
+    filter: drop-shadow(0.08rem 0 black);
 }
 .name {
     font-family: 'Press Start 2P', cursive;
@@ -81,8 +88,9 @@ header em {
 }
 
 figure{
-    background-image: url('/images/selfie.png');
-    background-size: cover;
+    /* background-image: url('/images/selfie.png'); */
+    background-image: url('./images/selfie2.png');
+    background-size: 90%;
     width: 59px;
     height: 59px;
     position: relative;
@@ -91,9 +99,7 @@ figure{
     border-radius: 5px;
     transform: rotateY(-54deg) rotateX(-19deg) rotateZ(24deg);
     box-shadow: 1px -1px 0 grey;
-    
 }
-
 
 #learning {
     /* background-color: yellow; */
@@ -129,7 +135,7 @@ a:hover {
     text-shadow: 2px -2px 0 lightblue;
 }
 
-#articles {
+.card-list {
     position: relative;
     top: 30px;
     display: flex;
@@ -138,10 +144,13 @@ a:hover {
     overflow: auto;
     white-space: nowrap;
     gap: 20px;
-    /* border: 5px solid yellow; */
+    border-top: 1px solid rgb(198, 145, 0);
+    margin-top: 1rem;
+    padding-top: 2rem;
+    /* box-shadow: inset -1rem 0 1rem black; */
 }
 
-article {
+.card {
     background-color: rgb(255, 255, 255);
     color: black;
     /* border: 2px solid green; */
@@ -151,9 +160,17 @@ article {
     padding: 10px 10px;
     white-space: initial;
     flex: none;
-    box-shadow: 6px 6px 1px rgb(155, 169, 255);
+    box-shadow: -1.9rem 0 1.5rem rgb(33, 33, 33);
+    position: relative;
+    transition: 0.3s ease;
 }
-article img {
+.card:first-child {
+    box-shadow: 0 0;
+}
+.card:not(:first-child) {
+    margin-left: -173px;
+}
+.card img {
     /* background-color: aqua; */
     display: block;
     margin: auto;
@@ -161,10 +178,19 @@ article img {
     width: 80px;
     padding-bottom: 10px;
     padding-top: 20px;
+    filter: drop-shadow(0.1rem 0 0.1rem);
     /* border-radius: 50%; */
     /* border: 5px solid yellow; */
 
 }
+
+.card:hover {
+    transform:translateY(-0.8rem);
+}
+.card:hover~.card{
+    transform: translateX(175px);
+}
+
 
 #community {
     width: fit-content;
