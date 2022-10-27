@@ -308,8 +308,9 @@ text-align: end;
 .keyboard > button {
   background-color: rgb(69, 69, 69);
   color: aliceblue;
-  width: 2em;
-  height: 2em;
+  width: 100%;
+  min-height: 2em;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,7 +369,7 @@ button.numbers {
 
 #clear {
   grid-area: clear;
-  width: 4.5em;
+  width: 100%;
   background-color: brown;
   box-shadow: 2px 2px 1px rgb(108, 28, 28);
 }
