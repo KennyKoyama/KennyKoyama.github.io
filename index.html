@@ -8,12 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- <script src="./node_modules/mathjs/lib/browser/math.js" type="text/javascript"></script> -->
 </head>
 <body>
   <main>
     <section id="home" class="home">
       <img src="/images/pngwing.png" alt="background" id="background" class="background">
-      <img src="/images/trybeWhite.webp" alt="logo trybe" id="trybelogo" class="trybelogo">
+      <section id="floor-container" class="floor-container">
+        <div id="floor" class="floor"></div>
+      </section>
+      <a href="http://betrybe.com.br" target="_blank"><img src="/images/trybeWhite.webp" alt="logo trybe" id="trybelogo" class="trybelogo"></a>
       <img src="/images/selfie2.png" alt="" class="selfie">
       <h2 class="name">Kenny<br>Koyama</h2>
       <section id="info" class="info">
@@ -37,6 +42,7 @@
         <!-- <h2>Community:</h2> -->
       </section>
     </section>
+    <section id="second" class="second">
     <section id="articles" class="card-list">
       <article id="unix" class="card">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" alt="Unix Logo" width="40px"/>
@@ -67,6 +73,41 @@
         <p>JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior,often incorporating third-party libraries.</p>
       </article>
     </section>
+    <section id="calculator" class="calculator">
+      <div id="screen" class="screen">
+        <img src="./images/trash.svg" alt="" id="history-clear" class="history-clear">
+        <div id="history" class="history"></div>
+        <input type="text" id="formula" class="formula" maxlength="15">
+        <div id="result" class="result"></div>
+      </div>
+      <div id="keyboard" class="keyboard">
+        <button id="zero" class="numbers">0</button>
+        <button id="dig1" class="numbers">1</button>
+        <button id="dig2" class="numbers">2</button>
+        <button id="dig3" class="numbers">3</button>
+        <button id="dig4" class="numbers">4</button>
+        <button id="dig5" class="numbers">5</button>
+        <button id="dig6" class="numbers">6</button>
+        <button id="dig7" class="numbers">7</button>
+        <button id="dig8" class="numbers">8</button>
+        <button id="dig9" class="numbers">9</button>
+        <button id="clear" class="clear">C</button>
+        <button id="backspace" class="backspace"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="salmon" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+          <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+        </svg></button>
+        <button id="perc" class="perc">%</button>
+        <button id="div" class="div">/</button>
+        <button id="mult" class="mult">x</button>
+        <button id="sub" class="sub">-</button>
+        <button id="sum" class="sum">+</button>
+        <button id="equal" class="equal">=</button>
+        <button id="dot" class="dot">.</button>
+        <button id="mem" class="mem">M</button>
+      </div>
+    </section>
+  </section>
   </main>
+  <footer></footer>
+  <script type="module" src="calculator.js"></script>
 </body>
 </html>
